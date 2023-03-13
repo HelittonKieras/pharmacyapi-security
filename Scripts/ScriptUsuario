@@ -1,0 +1,15 @@
+O cadastro do usuário será feito através do método POST na seguinte URL
+http://localhost:8080/usuario/cadastro
+
+Utilizaremos o seguinte JSON no body do postman
+
+{
+    "email":"Seu usuario",
+    "senha":"Sua senha"
+}
+
+Podemos efetuar também a busca de algum usuário no banco de dados utilizando o e-mail e a senha,
+que será feito utilizando o método GET no endpoint
+http://localhost:8080/usuario/login?email=seuemail&senha=suasenha
+
+

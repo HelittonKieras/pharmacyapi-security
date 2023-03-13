@@ -1,0 +1,24 @@
+Para cadastrarmos uma nova farmácia, a url que utilizaremos será a (Método POST)
+http://localhost:8080/farmacia
+
+O JSON que utilizaremos para o cadastro, lembrando que dados como razao social, cnpj, nome fantasia, email, celular, cep, numero, latitude e longitude é obrigatório o preenchimento. Dados como Logradouro, bairro, cidade, estado, serão preenchidos de forma automática após o post utilizando a interface FEIGN na API Viacep:
+
+
+{
+    "razao_social": "Cia latino americana de medicamentos",
+    "cnpj": "teste",
+    "nome_fantasia": "teste",
+    "email": "testes",
+    "telefone":"teste",
+    "celular": "teste",
+    "endereco": {
+        "cep": "04296000",
+        "complemento":"Em frente ao posto de gasolina",
+        "numero":490,
+        "latitude":"1",
+        "longitude":"1"
+
+    }
+}
+
+

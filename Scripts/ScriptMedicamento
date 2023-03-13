@@ -1,0 +1,23 @@
+Para o cadastro de um medicamento, utilizaremos o método POST na url
+http://localhost:8080/medicamentos
+
+JSON utilizado, lembrando que os campos nome_medicamento, nome_laboratório, dosagem, é obrigatório o preenchimento caso falte essas informações retornará uma resposta de erro:
+
+{
+ "nome_medicamento":"Novalgina",
+ "nome_laboratorio":"Sanofi",
+ "dosagem":"1g",
+ "desc_medicamento":" É indicada como analgésico e antitérmico, utilizada no tratamento das manifestações dolorosas e febre. Os efeitos podem ser esperados em 30 a 60 minutos após a administração e geralmente persistem por aproximadamente 4 horas.",
+ "preco_unitario":"21.89",
+ "tipo_medicamento":"Venda Livre"
+}
+
+
+Para a busca dos medicamentos cadastrados utilizaremos a mesma url porém com o método GET
+http://localhost:8080/medicamentos
+
+Podemos também atualizar, deletar e buscar um medicamento pelo seu ID
+Onde serão utilizados os métodos GET, PUT ou DELETE, apenas para o método PUT deverá ser passado o mesmo body que passamos quando realizamos o cadastro do medicamento.
+
+http://localhost:8080/medicamentos/idmedicamento
+
